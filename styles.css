@@ -1,0 +1,481 @@
+body {
+    background-color: gray;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-main {
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.header__inner {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu__list {
+    display: flex;
+    gap: 35px;
+}
+
+.menu__list-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu__list-link:hover {
+    color: blue;
+    font-weight: 800;
+
+}
+
+.main {
+    flex-grow: 1;
+    /* максимально растянуть */
+}
+
+.top {
+    color: white;
+    text-align: center;
+    padding-top: 445px;
+    padding-bottom: 50px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    /* чтобы растянуть по центру */
+}
+
+.title {
+    padding-top: 75px;
+    padding-bottom: 50px;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.form-wrap {}
+
+.form-search {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    gap: 25px;
+    background-color: gray;
+    opacity: 0.8;
+    width: 900px;
+    padding: 15px;
+    padding-top: 25px;
+    border: #9e9b9b;
+    border-radius: 5px;
+
+}
+
+.list-input {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.input-point {
+    border: none;
+    border: #f4f1f1 solid 0.7px;
+    border-radius: 7px;
+    background-color: gray;
+    height: 30px;
+    min-width: 180px;
+
+}
+
+::placeholder {
+    color: #f4f1f1;
+    padding-left: 5px;
+}
+
+.input-point:hover {
+    background-color: cadetblue;
+
+}
+
+.dates {
+    color: #f4f1f1;
+    padding-left: 5px;
+
+}
+
+.top__button {
+    background-color: #f4f1f1;
+    color: #151515;
+    border: #f4f1f1 solid 0.7px;
+    border-radius: 7px;
+    padding: 8px;
+    padding-bottom: 10px;
+    min-width: 180px;
+    height: 16px;
+    display: inline-block;
+    /* ссылки строчные и inline-block - чтобы применялись блочные свойства */
+    /* text-transform: uppercase; */
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.top__button:hover {
+    scale: 1.1;
+    color: white;
+    background-color: cadetblue;
+    box-shadow: 1px 2px 3px;
+}
+
+.list-input-members:hover::after {
+    content: attr(data-description);
+    position: absolute;
+    top: 90%;
+    background-color: rgb(95, 85, 239);
+    padding: 5px;
+}
+
+/* затемнение картинки */
+.swiper::after {
+    content: "";
+    background: rgba(21, 21, 21, 0.3);
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.swiper-slide {
+    height: 1080px;
+    background-position: center;
+    /* можно bg-position ставить bottom - картинка будет отталкиваться от низа */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-pagination-bullet {
+    width: 120px;
+    height: 6px;
+    background-color: #151515;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    height: 6px;
+    background-color: white;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 15px;
+}
+
+/* эти пути взяты из панели разработчика, т.к. слайдер скопирован и подключен со swiperjs */
+
+.hike-about {
+    padding-top: 80px;
+    display: flex;
+    gap: 50px;
+    width: 1180px;
+    height: 526px;
+    margin: 0 auto;
+}
+
+.hike-images {
+    width: 50%;
+}
+
+.hike-about-text {
+    padding: 50px 55px;
+    width: 50%;
+}
+
+.hike-about-images {
+    width: 60%;
+    margin-top: 170px;
+}
+
+.pre-title {
+    color: orange;
+    font-size: 18px;
+
+}
+
+.title-about {
+    line-height: 30px;
+}
+
+.text-about {
+    /* padding-right: 50px; */
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 22px;
+}
+
+.image-first {
+    width: 350px;
+    height: 400px;
+    background-image: url(./images_trip/Change-img_1.jpg);
+    border-radius: 25px;
+
+}
+
+.image-second {
+    width: 350px;
+    height: 400px;
+    background-image: url(./images_trip/Change-img_2.jpg);
+    border-radius: 25px;
+    position: relative;
+    left: 130px;
+    bottom: 290px;
+}
+
+.image-first:hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+
+}
+
+.black-button {
+    min-width: 170px;
+    height: 38px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.black-button:hover {
+    scale: 1.1;
+    background-color: cadetblue;
+    box-shadow: 2px 3px 3px;
+}
+
+.best-programm {
+    /* background-color: gainsboro; */
+    padding-top: 80px;
+    display: flex;
+    gap: 50px;
+    width: 1180px;
+    height: 826px;
+    margin: 0 auto;
+}
+
+.list-programm {
+    margin-bottom: 70px;
+}
+
+.list-programm .items-list-programm {
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: -40px;
+}
+
+.guid {
+    background-image: url(./images_trip/expert-guide.svg);
+}
+
+.hike {
+    background-image: url(./images_trip/safe-hike.svg);
+
+}
+
+.price {
+    background-image: url(./images_trip/price.svg);
+
+}
+
+.item-text {
+    margin-left: 75px;
+    margin-bottom: 48px;
+
+}
+
+.item-text h4 {
+    margin-bottom: 5px;
+}
+
+.hike-about-photo-1 {
+    border-top-right-radius: 49px;
+    border-bottom-left-radius: 49px;
+}
+
+.hike-about-photo-2 {
+    border-top-left-radius: 49px;
+    border-bottom-right-radius: 49px;
+}
+
+.popular-tours {
+    width: 1180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.popular-tours-images {
+    padding-bottom: 50px;
+}
+
+.popular-tours-cards {
+    display: flex;
+    gap: 18px;
+    margin-top: 70px;
+
+}
+
+.popular-tours-card>img {
+    border-radius: 33px;
+}
+
+.pop-tours-card-text {
+    display: flex;
+    gap: 40px;
+    color: white;
+    background-color: grey;
+    height: 100px;
+    opacity: 0.7;
+    margin-top: -100px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.pop-tours-card-title {
+    font-size: 22px;
+    word-spacing: 5px;
+    margin: 0;
+}
+
+.pop-tours-card-descript {
+    font-size: 16px;
+    margin: 0;
+
+}
+
+.card-price {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(68, 66, 66);
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 22px;
+}
+
+footer {
+    background-color: rgb(13, 63, 36);
+    color: white;
+}
+
+.footer-list-info {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.footer-column {
+    width: 30%;
+
+}
+
+.footer-list-info {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.footer-company-info {
+    margin-right: 45px;
+
+}
+
+.footer-company-info-text {
+    margin-bottom: 64px;
+}
+.footer-company-info-text>p{
+    line-height: 22px;
+}
+.footer-company-info-emale {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 18px;
+}
+
+.footer-bottom {
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.footer-company-info-links {
+    display: flex;
+    gap: 10px;
+}
+
+.personal-info {
+    text-decoration: underline;
+}
+
+.services>li::before {
+    content: "\203A";
+    padding: 10px;
+}
+
+.services>li {
+    line-height: 28px;
+    margin-left: -48px;
+}
+.footer-company-info-links>img{
+    transition: 1s;
+}
+.footer-company-info-links>img:hover {
+   transform: scale(1.3);
+}
