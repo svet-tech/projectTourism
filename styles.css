@@ -64,7 +64,7 @@ a {
 }
 
 .menu__list-link:hover {
-    color: blue;
+    color: rgb(4, 229, 249);
     font-weight: 800;
 }
 
