@@ -628,7 +628,7 @@ footer {
 }
 
 .input-email:invalid:required {
-    background-image: linear-gradient(to right, rgb(225, 178, 186), rgb(128, 213, 128));
+    background-image: linear-gradient(to right, rgb(234, 195, 160), rgb(162, 195, 151));
 }
 
 .input-email:valid {
