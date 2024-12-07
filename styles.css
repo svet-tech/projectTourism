@@ -1,6 +1,6 @@
 body {
     background-color: gray;
-    
+
     box-sizing: border-box;
 }
 
@@ -18,6 +18,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    overflow: hidden;
 
 }
 
@@ -43,7 +44,7 @@ a {
     top: -48px;
     left: 0;
     right: 0;
- 
+
 }
 
 .header__inner {
@@ -75,7 +76,7 @@ a {
     margin-top: -180px;
     flex-grow: 1;
     /* максимально растянуть */
-    
+
 }
 
 .top {
@@ -310,7 +311,7 @@ a {
 }
 
 .best-programm {
-    padding: 45px 150px 45px 150px;
+    padding: 45px 35px 45px 35px;
     display: flex;
     gap: 50px;
     /* width: 1200px; */
@@ -591,9 +592,11 @@ footer {
     line-height: 28px;
     margin-left: -48px;
 }
-.services>li:hover{
+
+.services>li:hover {
     color: aqua;
 }
+
 .footer-company-info-links>img {
     transition: 1s;
 }
@@ -667,4 +670,67 @@ footer {
 .top-block-text-info {
     font-size: 13px;
     color: #151515;
+}
+
+@media screen and (max-width:1342px) {
+    .wrap-blog{
+        padding: 45px 35px 110px 35px;
+    }
+}
+@media screen and (max-width:1240px) {
+
+    .image-first {
+        width: 308px;
+        height: 355px;
+    }
+
+    .image-second {
+        width: 308px;
+        height: 355px;
+    }
+    .hike-about{
+        width: 1035px;
+    }
+    .popular-tours{
+        width: 1035px;
+
+    }
+    .footer-list-info{
+        width: 95%;
+    }
+    .best-programm{
+        padding: 45px 15px 45px 15px;
+        gap: 15px;
+    }
+}
+@media screen and (max-width:1170px){
+    .popular-tours-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pop-tours-card-text{
+        padding-left: 12px;
+    }
+}
+@media screen and (max-width:1024px){
+    
+.hike-about-text {
+    padding: 50px 10px;
+    font-size: 12px;
+}
+
+.hike-about-images {
+    width: 60%;
+    margin-top: 150px;
+    
+}
+
+.blog-card{
+    gap: 10px;
+    font-size: 12px;
+}
+
+.footer-list-info{
+    font-size: 13px;
+}
 }
